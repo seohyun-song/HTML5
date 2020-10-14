@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            /* To let the borders collapse into one border!! */
+            border-collapse: collapse;
+        }
+        th, td {
+            /* Add cell padding between the cell content and its borders. */
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Table
+        - <tr> : row
+        - <th> : each table head/ bold and centerd
+        - <td> : each table data/ regular and left-aligned
+            can contain all sorts of HTML elements; text, img, lists, other tables, etc.
+        - Use the id attribute to uniquely define one table.
+    -->
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds</td>
+            <td>Maria</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro</td>
+            <td>Francisco</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst</td>
+            <td>Roland</td>
+            <td>Austria</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Name: </th>
+            <td>Bill Gates</td>
+        </tr>
+        <tr>
+            <!--To make a cell span more than one row, use the rowspan-->
+            <th rowspan="2">Telephone: </th>
+            <td>4322535353</td>
+        </tr>
+        <tr>
+            <td>555675766</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
