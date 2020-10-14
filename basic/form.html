@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!--
+        <form> container for different types of input elements, such as: text, checkboxes, radio, submit, etc.
+        The user input is most often sent to a server for processing.
+        * The form itself is not visible.
+        * Input must have a name attr to be submitted!
+        If the name attr is omitted, the value of the input field will not be sent at all.
+    -->
+    <form action="">
+        <!--
+            <label> help users who have difficulty clicking on very small regions(such as radio button or checkboxes)
+            for="name" and id="name" for name equal to id name to bind them together! 
+        -->
+        <label for="fname">First name: </label><br>
+        <!--the default width of an input field is 20 characters.-->
+        <input type="text" id="fname" name="fname"><br>
+
+        <label for="lname">Last name: </label><br>
+        <input type="text" id="lname" name="lname"><br>
+
+        <!--
+            <input type="submit"> defines button for submitting the form data to a form-handler.
+            The form handler is typically a file on the server with a script for processing input data.
+            The form-handler is specified in the form's action attr.
+        -->
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
