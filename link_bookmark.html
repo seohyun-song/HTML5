@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link_Bookmark</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        div {
+            width: 100%; 
+            height: 100vh;
+            border: 1px solid black; box-sizing: border-box;
+            text-align: center;
+            padding-top: 200px;
+        }
+        ul {
+            position: fixed;
+            top: 50%; right: 0;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        HTML links can be used to create bookmarks, so that readers can jump to specific parts of a web page.
+        Bookmarks can be usefull if a web page is very long.
+
+        You can also add a link to a bookmark on another page.
+        <a href="html_demo.html#C4">Jump to chapeter 4</a>
+    -->
+    <ul>
+        <li><a href="#page01">page01</a></li>
+        <li><a href="#page02">page02</a></li>
+        <li><a href="#page03">page03</a></li>
+        <li><a href="#page04">page04</a></li>
+    </ul>
+    <div id="page01">Page01</div>
+    <div id="page02">Page02</div>
+    <div id="page03">Page03</div>
+    <div id="page04">Page04</div>
+</body>
+</html>
