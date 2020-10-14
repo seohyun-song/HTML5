@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link</title>
+</head>
+<body>
+    <!--
+        HTML links are hyperlink.
+        U can click on a link and jump to another document.
+        When you move the mouse over a link, the mouse arrow will turn into a little hand.
+
+        Links can of course be styled with CSS, to get another look.
+
+        Target Attribue
+         ● _self : Default. Opens the document in the same window.
+         ● _blank: Opens the document in a new window or tab
+         ● _parent: Opens the document in the parent frame
+         ● _top: Opens the document in the full body of the window.
+    -->
+    <a href="https://www.w3schools.com/" target="_blank">Visit W3school!</a>
+
+    <h2>Absolute URLs</h2>
+    <p><a href="https://www.w3schools.com/">W3C</a></p>
+
+    <!--A local link(a link to a page within the same website)is specified with a relative URL-->
+    <h2>Relative URLs</h2>
+    <p><a href="/css/default.css">W3C</a></p>
+
+    <a href="https://www.naver.com/">
+        <img src="https://images.unsplash.com/photo-1568832359672-e36cf5d74f54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=60" style="width: 500px; height: 300px;" alt="img">
+    </a>
+
+    <!--mailto: inside the href attr to create a link that opens the user's email program-->
+    <a href="mailto:amanda@naver.com">Send email.</a>
+
+    <!--
+        To use an HTML button as a link, you have to add some JS code.
+        JS allows you to specify what happens at certain events, such as a click of a button
+    -->
+    <button onclick="document.location='default.asp'">HTML Tutorial</button>
+</body>
+</html>
