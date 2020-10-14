@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web</title>
+    <style>
+         * {
+             box-sizing: border-box;
+         }
+
+         .left {
+             background-color: #2196f3;
+             padding: 20px;
+             float: left;
+             /*The width is 20% by default*/
+             width: 20%;
+         }
+         .main {
+             background-color: #4caf50;
+             padding: 20px;
+             float: left;
+             /*The width is 60% by default*/
+             width: 60%;
+         }
+         .right {
+             background-color: #f1f1f1;
+             padding: 20px;
+             float: left;
+             /*The width is 20% by default*/
+             width: 20%;
+         }
+         /*Use a media query to add a break point at 800px*/
+         @media screen and (max-width: 800px) {
+             /*The width is 100%, when the viewport is 800px or smaller*/
+             .left, .main, .right {width: 100%;}
+         }
+    </style>
+</head>
+<body>
+    <!--
+        Responsive Web?
+            using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices.
+        
+        Responsive Web -Frameworks
+            1.W3.CSS
+                - modern CSS framework with support for desktop, tablet, and mobile design by default.
+                - smaller and faster than similat CSS frameworks.
+                - designed to be a high quality alternative to Bootstrap.
+                - designed to be independent of jQuery or any other JS library.
+            2.Bootstrap
+                - another popular CSS framework
+                - uses HTML, CSS and jQUery to make resposive web pages.
+
+    -->
+    <!--max-width: 100%; the image will scale down if it has to, but never scale up to larger than its original size.-->
+    <img src="img/daniel-apodaca-NwCIEX2UIL0-unsplash.jpg" style="max-width:100%">
+
+    <!--
+        Responsive Text Size
+        vw: viewport width
+        1vw = 1% of viewport width
+    -->
+    <h1 style="font-size: 10vw;">Hello World!</h1>
+
+    <div class="left">
+        <p>Left Menu</p>
+    </div>
+    <div class="main">
+        <p>Main content</p>
+    </div>
+    <div class="right">
+        <p>Right Menu</p>
+    </div>
+    
+</body>
+</html>
