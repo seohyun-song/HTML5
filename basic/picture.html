@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Tag for Resposible Web.</title>
+    <style>
+    </style>
+</head>
+<body>
+    <!--
+        HTML <picture> element allows us to display different pictures for diffrent devices or screen size!!!
+        ● <source> elements, each referring images through the srcset="".
+        ● This way the browser can choose the img that best fits the current view and / or device.
+        ● media="" defines when the image is the most suitable.
+        ● <img> as the last child of the <picture> and is used by browsers that do not support the <picture>, or if none of the <source> tags matches.
+        ● Format Support-> some browser or devices may not support all image formats. 
+        By using <picture> , you can add images of all formats. 
+    -->
+    <picture>
+        <!--Mobile-->
+        <source media="(min-width: 320px) and (max-width: 600px)" srcset="https://images.unsplash.com/photo-1529974019031-b0cd38fd54fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+            sizes="100vw"
+        >
+        <img src="https://images.unsplash.com/photo-1521358522799-ad7a75d9e346?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+            sizes="100vw"
+        >
+    </picture>
+</body>
+</html>
